@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aesthetic Computer Store - My Cart</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #c4c4c4;
+    }
+
+    .container {
+      
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .cart-header {
+      background-color: #ffaf2e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .cart-header h2 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .cart-summary {
+      width: 25%;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .cart-summary h3 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .cart-summary p {
+      margin-bottom: 10px;
+    }
+
+    .cart-items {
+      width: 75%;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .cart-items table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .cart-items table th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    .cart-items table th {
+      font-weight: bold;
+    }
+
+    .cart-items table img {
+      width: 50px;
+      height: auto;
+    }
+
+    .cart-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-top: 1px solid #ccc;
+    }
+
+    .cart-actions button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cart-header">
+      <h2>My Cart</h2>
+    </div>
+
+    <div class="cart-summary">
+        <h3>Order Summary</h3>
+      
+        <p>Subtotal: $123.45</p>
+      
+        <!--{% if currentUser.isGoldMember %}-->
+          <p>Gold Member Discount: -$10.00</p>
+        <!--{% endif %}-->
+      
+        <p>Shipping: $10.00</p>
+        <p>Tax: $5.00</p>
+      
+        <hr>
+      
+        <p>Total: $128.45
+      </div>
+
+    <div class="cart-items">
+      <h3>Your Items</h3>
+
+      <table>
+        <tr>
+          <th>Product Image</th>
+          <th>Product Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+
+        <tr>
+          <td><img src="product-image.jpg" alt="Product Image"></td>
+          <td>Gaming Laptop</td>
+          <td>1</td>
+          <td>$999.99</td>
+        </tr>
+
+        <tr>
+          <td><img src="product-image.jpg" alt="Product Image"></td>
+          <td>Wireless Mouse</td>
+          <td>2</td>
+          <td>$23.99</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="cart-actions">
+      <button>Continue Shopping</button>
+      <button>Proceed to Checkout</button>
+    </div>

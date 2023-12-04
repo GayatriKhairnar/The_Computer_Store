@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Computer Store</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #fff;
+    }
+
+    header {
+        
+      background-color: #ffaf2e;
+      padding: 2px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px; /* Adjust the width to make the header shorter */
+      margin: 0 auto;
+      position: relative;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin-left: 15px;
+      font-size: 3rem;
+    }
+
+    /*header .logo {
+     /* Add position: absolute to position it within the header */
+    /*top: 10px; /* Adjust the top position to align with the header's top */
+    /*left: 20px; /* Adjust the left position to align with the header's left side */
+    /*width: 150px;
+    height: 100px;
+    object-fit: cover;
+    } 
+    */
+
+    nav {
+      flex: 1;
+      text-align: right;
+    }
+
+    nav a {
+        font-size: 20px;
+      color: #000000;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    main {
+      padding: 20px;
+      
+    }
+
+    section#hero {
+      background-color: #fff;
+      padding: 20px;
+    }
+
+    section#hero h2 {
+      font-size: 2rem;
+    }
+
+    .products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+    
+    }
+
+    .product {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 30.3333%;
+    margin: 10px;
+    text-align: center;
+    
+    }
+
+    .product img {
+    width: 100%;
+    height: auto;
+    }
+
+    .product h3 {
+      font-size: 1.5rem;
+    }
+
+    .product p {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+    /* Dropdown Menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-left: 20px;
+    }
+    .dropdown-btn {
+      background-image: url('https://tse4.mm.bing.net/th?id=OIP.MO13Yb2PjehyQD7s6Lsx_gHaHa&pid=Api&P=0&h=220');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 30px;
+      height: 30px;
+      border: none;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      
+    }
+
+    .dropdown-content
+ 
+    a {
+        color: black;
+        padding: 12px
+    
+    16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        .dropdown-content
+    
+    a:hover {
+        background-color: #f1f1f1;
+        }
+
+        .dropdown:hover
+    
+    .dropdown-content {
+        display: block;
+        }
+
+  </style>
+</head>
+<body>
+  <header>
+    
+    <div class="dropdown">
+        <button class="dropdown-btn">x</button>
+        <div class="dropdown-content">
+          <a href="index2.html">Home</a>
+          <a href="profile.html">Profile</a>
+          <a href="#">Orders</a>
+          <a href="#">Settings</a>
+          <a href="cart.html">Cart</a>
+          <a href="#">Payment</a>
+          <a href="#">Help</a>
+        </div>
+    </div>
+    <!--<div class="logo">
+        <img src="https://clipground.com/images/laptop-logo-png-1.png" alt="The Computer Store Logo" width = "150" height = "100">
+        
+      </div>-->
+  
+      
+    <h1>The Computer Store</h1>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="signup.html">SignUp</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <!--<h2>Products</h2>-->
+      <div class="products">
+        <div class="product">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.sOdWXA8w_vNRtjpSjt6IdQHaFn&pid=Api&P=0&h=220" alt="Product 1">
+          <h3>Laptop Transparent Image #1518417</h3>
+          <p>
+            <a href="cart.html">Add to Cart</a>
+          </p>
+        </div>
+        <div class="product">
+          <img src="https://tse2.mm.bing.net/th?id=OIP.AF4HQ2cuoyKRqDQZ-V-YvAHaF-&pid=Api&P=0&h=220" alt="Product 2">
+          <h3>Laptop Apple Macbook Pro Core i5</h3>
+          <p>
+            <a href="cart.html">Add to Cart</a>
+          </p>
+        </div>
+        <div class="product">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.OkQxx3EfHmCiC0rjJeaKNAHaFB&pid=Api&P=0&h=220" alt="Product 3">
+          <h3>HP ProBook X360 11 G5 EE 11.6" Laptop</h3>
+          <p>
+            <a href="cart.html">Add to Cart</a>
+          </p>
+        </div>
+        <div class="product">
+          <img src="https://i.imgur.com/example.png" alt="Product 4">
+          <h3>Product 4</h3>
+          <p>
+            <a href="cart.html">Add to Cart</a>
+          </p>
+        </div>
+        <div class="product">
+            <img src="https://i.imgur.com/example.png" alt="Product 5">
+            <h3>Product 5</h3>
+            <p>
+              <a href="cart.html">Add to Cart</a>
+            </p>
+          </div>
+          <div class="product">
+            <img src="https://i.imgur.com/example.png" alt="Product 6">
+            <h3>Product 6</h3>
+            <p>
+              <a href="cart.html">Add to Cart</a>
+            </p>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 The Computer Store</p>
+  </footer>
+</body>
+</html>
