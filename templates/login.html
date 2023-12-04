@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aesthetic Login Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #ffaf2e;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    /* Split the page into two halves */
+    .container {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Image section */
+    .image-section {
+      flex: 1;
+      background-image: url('login-background.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-section h2 {
+      color: white;
+      font-size: 3rem;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Form section */
+    .form-section {
+      flex: 1;
+      background-color: #fff;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      background-color: #c4c4c4;
+      width: 300px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #89bfeb;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-section">
+      <h2>The Computer Store</h2>
+    </div>
+
+    <div class="form-section">
+      <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
